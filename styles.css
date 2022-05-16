@@ -32,6 +32,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     row-gap: 40px;
     border: 2px dotted green;
     width: 400px;
@@ -43,8 +44,12 @@ main{
 
 form{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 10px;
+}
+
+.divisa{
+    background-color: #c6e5b1;
+    font-weight: bold;
 }
 
 .inputDiv{
@@ -56,7 +61,7 @@ form{
     border-radius: 5px;
 }
 
-label{
+.instruction{
     color: green;
     font-weight: bold;
     margin-bottom: 10px;
@@ -107,14 +112,22 @@ select{
 }
 
 .total{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     color: green;
+    text-align: center;
 }
 
-.total p{
+.total div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
     margin-top: 5px;
+}
+
+.resultado{
     border: 2px dashed green;
-    padding: 5px 0px;
+    padding: 3px 5px;
 }
 
 footer{

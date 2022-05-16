@@ -16,12 +16,16 @@
     </header>
     <main>
         <div class="mainDiv">
+            <p class="instruction">Ingrese el valor de su compra</p>
             <form action="">
-                <label for="valor">Ingrese el valor de su compra</label>
                     <div class="inputDiv">
                         <span>$</span>
                         <input type="number" id="valor">
                     </div>
+                    <select name="monedaIngresada" id="monedaIngresada" class="divisa">
+                        <option value="arg">ARG</option>
+                        <option value="usd">USD</option>
+                    </select>
             </form>
             <section class="impuestos">
                 <article>
@@ -42,7 +46,15 @@
             </section>
             <section class="total">
                 <h3>Precio Total</h3>
-                <p class="resultado">$0.00</p>
+                <div>
+                    <p class="resultado">$0.00</p>
+                    <form action="">
+                        <select name="monedaIngresada" id="monedaFinal" class="divisa">
+                            <option value="arg">ARG</option>
+                            <option value="usd">USD</option>
+                        </select>
+                    </form>
+                </div>
             </section>
         </div>
     </main>
