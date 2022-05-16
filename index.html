@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de impuestos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/50303851c6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de impuestos</h1>
+        <p>Para compras en el exterior</p>
+    </header>
+    <main>
+        <div class="mainDiv">
+            <form action="">
+                <label for="valor">Ingrese el valor de su compra</label>
+                    <div class="inputDiv">
+                        <span>$</span>
+                        <input type="number" id="valor">
+                    </div>
+            </form>
+            <section class="impuestos">
+                <article>
+                    <a target="_blank" href="https://www.afip.gob.ar/impuesto-pais/caracteristicas/definicion.asp"><i class="fa-solid fa-circle-question"></i></a>
+                    <div>
+                        <h2>Impuesto Pais</h2>
+                        <p>30%</p>
+                    </div>
+                </article>
+                <p class="mas">+</p>
+                <article>
+                    <a target="_blank" href="https://www.afip.gob.ar/regimen-devolucion-percepciones/percepcion/que-es.asp"><i class="fa-solid fa-circle-question"></i></a>
+                    <div>
+                        <h2>RG 4815</h2>
+                        <p>35%</p>
+                    </div>
+                </article>
+            </section>
+            <section class="total">
+                <h3>Precio Total</h3>
+                <p class="resultado">$0.00</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Diseñado por <a target="_blank" href="https://tomascosta1.github.io/portfolio/">Costa Tomás</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

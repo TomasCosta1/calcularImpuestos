@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #d5e2cc;
+}
+
+header{
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 20px 0px;
+    border-radius: 0px 0px 50px 50px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.mainDiv{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    border: 2px dotted green;
+    width: 400px;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 15px green;
+    border-radius: 5px;
+    background-color: #c6e5b1;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputDiv{
+    color: green;
+    border: 3px solid green;
+    display: flex;
+    width: 120px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+label{
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input{
+    border: none;
+    color: green;
+    font-weight: bold;
+    width: 100px;
+    background-color: #c6e5b1;
+}
+
+select{
+    color: green;
+    border: 3px solid green;
+    border-radius: 5px;
+}
+
+.impuestos{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.mas{
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.impuestos article{
+    background-color: rgb(24, 175, 24);
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    width: 140px;
+    box-shadow: 0px 0px 15px green;
+    align-self: stretch;
+}
+
+.impuestos a{
+    align-self: flex-end;
+    color: #c6e5b1;
+}
+
+.total{
+    text-align: center;
+    color: green;
+}
+
+.total p{
+    margin-top: 5px;
+    border: 2px dashed green;
+    padding: 5px 0px;
+}
+
+footer{
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 20px 0px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: font-size 200ms ease-in-out;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    font-size: 20px;
+}
