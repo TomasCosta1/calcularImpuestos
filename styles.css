@@ -136,3 +136,9 @@ footer a:hover{
     text-decoration: underline;
     font-size: 20px;
 }
+
+@media (max-width:500px){
+    .mainDiv{
+        width: 360px;
+    }
+}
