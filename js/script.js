@@ -1,5 +1,3 @@
-var usd = 200;
-
 function calcularImpuestos(){
     var divisaIngresada = document.querySelector("#monedaIngresada").value;
     var divisaFinal = document.querySelector("#monedaFinal").value;
@@ -14,10 +12,10 @@ function calcularImpuestos(){
             resultado.textContent = '$' + impuesto(valor);
         }
         if(divisaFinal=="usd" && divisaIngresada=="arg"){
-            resultado.textContent = '$' + impuesto(valor)/usd;
+            resultado.textContent = '$' + impuesto(valor)/parseInt(usd.textContent);
         }
         if(divisaFinal=="arg" && divisaIngresada=="usd"){
-            resultado.textContent = '$' + impuesto(valor)*usd;
+            resultado.textContent = '$' + impuesto(valor)*parseInt(usd.textContent);
         }
     
     }

@@ -20,14 +20,29 @@ header{
     color: white;
     padding: 20px 0px;
     border-radius: 0px 0px 50px 50px;
+    box-shadow: 0px 0px 15px green; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
 }
 
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+.errorNeg, .errorLet{
+    color: red;
+    display: none;
+    font-weight: bold;
+}
+
+
 .mainDiv{
+    position: relative;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -40,6 +55,17 @@ main{
     box-shadow: 0px 0px 15px green;
     border-radius: 5px;
     background-color: #c6e5b1;
+}
+
+.usdPrice, .usdPrice div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.usdPrice div{
+    gap: 2px;
 }
 
 form{
@@ -59,6 +85,7 @@ form{
     width: 120px;
     justify-content: center;
     border-radius: 5px;
+    font-size: 1.563rem;
 }
 
 .instruction{
@@ -72,7 +99,10 @@ input{
     color: green;
     font-weight: bold;
     width: 100px;
+    font-weight: 23px;
     background-color: #c6e5b1;
+    height: 30px;
+    font-size: 1.563rem;
 }
 
 select{
@@ -90,7 +120,7 @@ select{
 .mas{
     color: green;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .impuestos article{
@@ -121,13 +151,13 @@ select{
 .total div{
     display: flex;
     gap: 10px;
-    align-items: center;
     margin-top: 5px;
 }
 
 .resultado{
     border: 2px dashed green;
     padding: 3px 5px;
+    font-size: 1.563rem;
 }
 
 footer{
@@ -136,6 +166,7 @@ footer{
     color: white;
     padding: 20px 0px;
     border-radius: 50px 50px 0px 0px;
+    box-shadow: 0px 0px 15px green;
 }
 
 footer a{
@@ -147,7 +178,7 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 @media (max-width:500px){
