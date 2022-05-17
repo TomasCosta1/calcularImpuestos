@@ -9,13 +9,13 @@ function calcularImpuestos(){
     }else{
         valor = parseInt(document.querySelector('#valor').value);
         if((divisaFinal=="arg" && divisaIngresada=="arg") || (divisaFinal=="usd" && divisaIngresada=="usd")){
-            resultado.textContent = '$' + impuesto(valor);
+            resultado.textContent = '$' + impuesto(valor).toFixed(2);
         }
         if(divisaFinal=="usd" && divisaIngresada=="arg"){
-            resultado.textContent = '$' + impuesto(valor)/parseInt(usd.textContent);
+            resultado.textContent = '$' + (impuesto(valor)/parseInt(usd.textContent)).toFixed(2);
         }
         if(divisaFinal=="arg" && divisaIngresada=="usd"){
-            resultado.textContent = '$' + impuesto(valor)*parseInt(usd.textContent);
+            resultado.textContent = '$' + (impuesto(valor)*parseInt(usd.textContent)).toFixed(2);
         }
     
     }
@@ -23,7 +23,7 @@ function calcularImpuestos(){
 setInterval(calcularImpuestos,1)
 
 function impuesto(valor){
-    return (valor*1.65).toFixed(2)
+    return (valor*1.65)
 }
 
 
